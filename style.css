@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* Accent Colors */
+
+  --blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+
+  --ff: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff);
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: var(--red);
+  background-image: url("./images/bg-intro-mobile.png");
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 90%;
+  margin: 5em auto 2em auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 1.75rem;
+}
+
+.intro span {
+  display: inline-block;
+}
+
+.intro p {
+  font-size: 1.05rem;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+button {
+  width: 100%;
+  padding: 1em 5em;
+  margin-bottom: 2em;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 0.8em;
+  line-height: 2;
+  background-color: var(--blue);
+  box-shadow: 0px 5px 2px 0px rgba(62, 60, 73, 0.3);
+}
+
+button span {
+  font-weight: 400;
+}
+
+form {
+  background-color: white;
+  border-radius: 1em;
+}
+
+input {
+  font-weight: 600;
+  text-align: left;
+  display: block;
+  margin: 1em auto 0 auto;
+  padding: 1em 0 1em 1.5em;
+  width: 80%;
+  height: 4em;
+  border-color: var(--grayish-blue);
+  border-radius: 0.5em;
+}
+
+input[type="submit"] {
+  background-color: var(--green);
+  color: white;
+  border-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0px 5px 2px 0px hsl(154, 59%, 38%);
+}
+
+input,
+.terms-and-services {
+  color: black;
+}
+
+.terms-and-services {
+  font-size: 0.75em;
+  color: var(--grayish-blue);
+  width: 80%;
+  margin: 1em auto;
+  padding-bottom: 1.5em;
+}
+
+.terms-and-services span {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.attribution {
+  margin-top: 5em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
