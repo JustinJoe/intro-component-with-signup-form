@@ -155,13 +155,12 @@ input:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* width: 45em;
-      margin: 5em auto; */
     gap: 5em;
   }
 
   .container {
     max-width: 80%;
+    margin-top: 10em;
   }
   .intro,
   .signup-form {
