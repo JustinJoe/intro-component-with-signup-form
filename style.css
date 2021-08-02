@@ -9,6 +9,7 @@ html {
 
   --red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
+  --light-green: hsl(154, 59%, 65%);
 
   /* Accent Colors */
 
@@ -107,29 +108,37 @@ input {
 }
 
 .error-alert {
-  border-color: var(--red);
+  border: 2px solid var(--red);
   background-image: url("./images/icon-error.svg");
   background-repeat: no-repeat;
   background-position: right 5% center;
 }
 
-.signup-form div p {
+.signup-form label p {
   text-align: right;
   font-size: 0.75rem;
   font-style: italic;
   color: var(--red);
   width: 90%;
-  margin: 0 auto;
+  margin: -1.25em auto 1.5em auto;
+  padding-right: 0.25em;
 }
 
-input[type="submit"] {
+#submit {
   background-color: var(--green);
+  width: 90%;
   color: white;
   border-color: transparent;
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
   box-shadow: 0px 5px 2px 0px hsl(154, 59%, 38%);
+  transition: all 1s ease-in-out;
+}
+
+#submit:hover {
+  background-color: var(--light-green);
+  box-shadow: 0px 5px 2px 0px hsl(154, 59%, 50%);
 }
 
 input,
@@ -165,6 +174,13 @@ input:focus {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 @media (min-width: 48em) {
